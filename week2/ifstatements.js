@@ -6,18 +6,20 @@ if(5 > 3){
 }
 
 //two
-if("cat" === 3) {
+var strCat = "cat";
+if(strCat.length) {
    console.log("is the length")
 } else {
     console.log("is not the length")
 }
 
 //three
-if("cat" === "dog") {
-    console.log("they are the same")
-} else {
-    console.log("not the same")
-} 
+var strCat = "cat";
+var strDog = "dog";
+if(strCat.length == strDog.length)
+    console.log("length of cat and dog are equal");
+else
+    console.log("length of cat and dog are not the same");
 
 //bronze medal
 
