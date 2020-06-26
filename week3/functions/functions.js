@@ -8,6 +8,9 @@ console.log("========");
 
 //Write a function that accepts three numbers as parameters, and returns the largest of those numbers.
 var num = [1, 2, 3];
+function  threeNumbers(num1, num2, num3) {
+
+}
 console.log(Math.max.apply(null, num));
 console.log("==========");
 
