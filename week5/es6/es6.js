@@ -1,5 +1,6 @@
 //1
-let name = "John"
+const manName = "John"
+let name = "spot"
 let age = 101
 
 function runForLoop(pets) {
@@ -16,7 +17,7 @@ function runForLoop(pets) {
         pet.name = name
         petObjects.push(pet)
     }
-    console.log("man name: ", name)
+    console.log("man name: ", manName)
     return petObjects
 };
 
@@ -28,10 +29,10 @@ const carrots = ["bright orange", "ripe", "rotten"];
 
 mapVegetables = arr => {
     return arr.map(carrot => {
-        return {type: carrot}
-    })
-}
-console.log(mapVegetables(carrots));
+        return { type: "carrot", name: carrot }
+    });
+};
+console.log(mapVegetables([carrots]));
 console.log("=====");
 
 //3
@@ -42,28 +43,30 @@ const people = [
     { name: "Bowser", friendly: false}
 ];
 
-function filterForFriendly(arr) {
-    return arr.filter(function(person) {
-        return person.friendly
-    })
-};
+const filterForFriendly = people.filter(people => people.friendly);
+console.log(filterForFriendly);
 console.log("=====");
 
 //4
-function doMathSum(a, b) {
-    return a + b
-}
-var produceProduct = function(a, b) {
-    return a * b
-};
-console.log("=====");
+/*const doMathSum = sum((a, b) => a + b);
+
+const produceProduct = multiply((a, b) => a * b);
+
+console.log("=====");*/
 
 //5
+const user = {
+    firstName: "Jane",
+    lastName:  "Doe",
+    age: 100
+}
 
+//const printString = user.toString("Hi " + user.firstName + user.lastName + ", how does it feel to be " + user.age + "?")
+console.log("Hi " + (user.firstName + " " + user.lastName) + " , how does it feel to be " + (user.age) + "?");
 console.log("=====");
 
 //6
-
+console.log(`Hi ${user.firstName} ${user.lastName}, how does it feel to be ${user.age}?`)
 console.log("=====");
 
 //7
@@ -73,18 +76,18 @@ const animals = [
     { type: "pig", name: "piglette" },
     { type: "dog", name: "sparky" }
 ];
-
-function filterForDogs(arr) {
-    return arr.filter(animal => {
-        if (animal.type === "dog") {
-            return true
-        } else {
-            return false
-        }
-    })
-};
+const filterForDogs = animals.filter(animal => animal.type === "dog");
+console.log(filterForDogs);
 console.log("=====");
 
 //8
+const guest = {
+    location: "Hawaii",
+    name: "Janice"
+}
+console.log(`Hi ${guest.name}!
 
+Welcome to ${guest.location}.
+
+I hope you enjoy your stay. Please ask the president of ${guest.location} if you need anything.`)
 console.log("=====");

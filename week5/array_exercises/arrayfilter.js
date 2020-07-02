@@ -187,14 +187,14 @@ arr4.sort(function(a, b) {
     return a - b
 });
 console.log("Array listed from smallest number to largest number " + arr4 + ".");
-console.log("=========");
+console.log("======");
 
 //2
 arr4.sort(function(a, b) {
     return b - a
 });
 console.log("Array listed from largest number to smallest number " + arr4 + ".");
-console.log("=========");
+console.log("======");
 
 //3
 const words = ["dog", "wolf", "by", "family", "eaten"]
@@ -203,4 +203,4 @@ const lengthSort = words.sort(function(a, b) {
     return a.length - b.length
 });
 console.log("Array listed from shortest string to longest string " + lengthSort + ".");
-console.log("=========");
+console.log("======");
