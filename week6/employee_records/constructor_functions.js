@@ -1,4 +1,3 @@
-let Employees = [];
 
 function Employee (name, jobTitle, salary, status = "Full Time") {
     this.name = name;
@@ -16,3 +15,7 @@ let employee3 = new Employee ("Bill", "Janitor", "$30,000/year", "Part Time");
 employee1.printEmployeeForm();
 employee2.printEmployeeForm();
 employee3.printEmployeeForm();
+
+let Employees = [employee1,employee2, employee3];
+console.log(Employees);
+
